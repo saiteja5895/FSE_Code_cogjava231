@@ -1,0 +1,1346 @@
+!SESSION 2022-11-07 22:05:21.874 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=11.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file C:\FSE\FSC_Code_cogJava1187-main\SpringBootCogJava231\BackendcodeCogJava231\.metadata\.bak_1.log
+Created Time: 2022-11-07 22:13:10.925
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-11-07 22:13:10.925
+!MESSAGE Unexpected internal error
+!STACK 1
+Java Model Exception: Core Exception [code -1] I/O exception
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:153)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	... 34 more
+Caused by: org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2985)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	... 40 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 -1 2022-11-07 22:13:10.925
+!MESSAGE I/O exception
+!STACK 0
+java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-11-07 22:13:10.928
+!MESSAGE Unexpected internal error
+!STACK 1
+Java Model Exception: Core Exception [code -1] I/O exception
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:153)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	... 34 more
+Caused by: org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2985)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	... 40 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 -1 2022-11-07 22:13:10.928
+!MESSAGE I/O exception
+!STACK 0
+java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-11-07 22:13:10.930
+!MESSAGE Unexpected internal error
+!STACK 1
+Java Model Exception: Core Exception [code -1] I/O exception
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:153)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	... 34 more
+Caused by: org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2985)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	... 40 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 -1 2022-11-07 22:13:10.930
+!MESSAGE I/O exception
+!STACK 0
+java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-11-07 22:13:10.932
+!MESSAGE Unexpected internal error
+!STACK 1
+Java Model Exception: Core Exception [code -1] I/O exception
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:153)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.10/byte-buddy-agent-1.12.10.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	... 34 more
+Caused by: org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2985)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.10/byte-buddy-agent-1.12.10.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	... 40 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 -1 2022-11-07 22:13:10.932
+!MESSAGE I/O exception
+!STACK 0
+java.io.IOException: Unable to read archive: C:/Users/cogjava231/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.10/byte-buddy-agent-1.12.10.jar
+	at org.eclipse.jdt.internal.core.JavaModelManager.throwExceptionIfArchiveInvalid(JavaModelManager.java:2981)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2918)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2904)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:264)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:202)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getJarBinaryModuleInfo(ModularClassFile.java:171)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getBinaryModuleInfo(ModularClassFile.java:136)
+	at org.eclipse.jdt.internal.core.ModularClassFile.buildStructure(ModularClassFile.java:55)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.ModularClassFile.getModule(ModularClassFile.java:298)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:914)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:890)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:321)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.addModuleClassPathInfo(JavaSearchNameEnvironment.java:194)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.mapToClassPathLocation(JavaSearchNameEnvironment.java:188)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.computeClasspathLocations(JavaSearchNameEnvironment.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.JavaSearchNameEnvironment.<init>(JavaSearchNameEnvironment.java:77)
+	at org.eclipse.jdt.internal.core.search.matching.IndexBasedJavaSearchEnvironment.create(IndexBasedJavaSearchEnvironment.java:334)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.initialize(MatchLocator.java:1222)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1260)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1373)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1515)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:112)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:250)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:670)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.internalSearch(RefactoringSearchEngine.java:147)
+	at org.eclipse.jdt.internal.corext.refactoring.RefactoringSearchEngine.search(RefactoringSearchEngine.java:134)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.getReferences(RenamePackageProcessor.java:756)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor$PackageRenamer.doRename(RenamePackageProcessor.java:728)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor.doCheckFinalConditions(RenamePackageProcessor.java:441)
+	at org.eclipse.jdt.internal.corext.refactoring.rename.JavaRenameProcessor.checkFinalConditions(JavaRenameProcessor.java:51)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:225)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:86)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:122)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.419
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.420
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.426
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.431
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231 false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.431
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.432
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.437
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.443
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.444
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Stock
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.444
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.449
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.452
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Stock false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.453
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-ViewDelete
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.454
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.458
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.462
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-ViewDelete false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.462
+!MESSAGE executing callback sts4.classpath.VagxmJfO 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.483
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.627
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.629
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.634
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.638
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231 false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.638
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.639
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.645
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.649
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.650
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Stock
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.650
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.655
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.658
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Stock false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.659
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-ViewDelete
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.659
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.663
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.667
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-ViewDelete false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.667
+!MESSAGE executing callback sts4.classpath.VagxmJfO 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:19.685
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.560
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.560
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.565
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.569
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231 false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.569
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.570
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.575
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.580
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.581
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Stock
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.582
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.586
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.589
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Stock false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.590
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-ViewDelete
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.591
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.595
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.598
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-ViewDelete false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.599
+!MESSAGE executing callback sts4.classpath.VagxmJfO 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:13:31.611
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.456
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.457
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.462
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.466
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231 false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.466
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.467
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.472
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.477
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.477
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Stock
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.478
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.483
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.486
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Stock false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.487
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-ViewDelete
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.487
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.492
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.496
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-ViewDelete false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.497
+!MESSAGE executing callback sts4.classpath.VagxmJfO 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:25:27.565
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:42:43.675
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:42:43.676
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:42:43.682
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:42:43.688
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:42:43.688
+!MESSAGE executing callback sts4.classpath.VagxmJfO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:42:43.698
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:43:01.506
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:43:01.507
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:43:01.514
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:43:01.518
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:43:01.519
+!MESSAGE executing callback sts4.classpath.VagxmJfO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:43:01.526
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:45:12.792
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:45:12.793
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:45:12.798
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:45:12.803
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:45:12.803
+!MESSAGE executing callback sts4.classpath.VagxmJfO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:45:12.813
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-11-07 22:49:27.736
+!MESSAGE Could not download sources for antlr:antlr:2.7.7
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:jar:sources:2.7.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing antlr:antlr:jar:sources:2.7.7
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-11-07 22:49:27.736
+!MESSAGE Could not resolve artifact antlr:antlr:jar:sources:2.7.7
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-11-07 22:49:27.736
+!MESSAGE Missing antlr:antlr:jar:sources:2.7.7
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-11-07 22:51:01.287
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4-language-servers/e4.8/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-11-07 22:51:14.251
+!MESSAGE Could not download javadoc for antlr:antlr:2.7.7
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:jar:javadoc:2.7.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing antlr:antlr:jar:javadoc:2.7.7
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-11-07 22:51:14.251
+!MESSAGE Could not resolve artifact antlr:antlr:jar:javadoc:2.7.7
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-11-07 22:51:14.251
+!MESSAGE Missing antlr:antlr:jar:javadoc:2.7.7
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:14.959
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:14.961
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:14.965
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:14.970
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231 false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:14.970
+!MESSAGE executing callback sts4.classpath.VagxmJfO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:14.989
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-11-07 22:51:46.626
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4-language-servers/e4.8/content.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:57.191
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:57.191
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:57.196
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:57.200
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231 false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:57.201
+!MESSAGE executing callback sts4.classpath.VagxmJfO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:51:57.215
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-11-07 22:52:10.515
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4/update/latest/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-11-07 22:52:55.901
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4/update/latest/content.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-11-07 22:53:10.946
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4-language-server-integrations/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-11-07 22:53:56.305
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4-language-server-integrations/content.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-11-07 22:58:08.916
+!MESSAGE Could not download sources for io.netty:netty-resolver-dns-native-macos:4.1.77.Final:osx-x86_64
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.77.Final
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.77.Final
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:08.917
+!MESSAGE Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.77.Final
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:08.917
+!MESSAGE Missing io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.77.Final
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-11-07 22:58:22.215
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-gateway:3.1.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:3.1.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:3.1.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:22.215
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:3.1.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:22.215
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:3.1.3
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-11-07 22:58:22.929
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter:3.1.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:22.929
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:22.929
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.3
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-11-07 22:58:49.746
+!MESSAGE Could not download javadoc for io.netty:netty-resolver-dns-native-macos:4.1.77.Final:osx-x86_64
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.77.Final
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.77.Final
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:49.746
+!MESSAGE Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.77.Final
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-11-07 22:58:49.746
+!MESSAGE Missing io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.77.Final
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:52.671
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:52.672
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:52.678
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:52.683
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:52.683
+!MESSAGE executing callback sts4.classpath.VagxmJfO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:52.698
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:55.400
+!MESSAGE Preparing classpath changed notification EstockExchangeCogJava231-Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:55.401
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:55.408
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:55.413
+!MESSAGE buffering callback sts4.classpath.VagxmJfO EstockExchangeCogJava231-Gateway false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:55.413
+!MESSAGE executing callback sts4.classpath.VagxmJfO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 22:58:55.427
+!MESSAGE executing callback sts4.classpath.VagxmJfO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 23:27:28.654
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VagxmJfO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 23:27:28.654
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VagxmJfO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 23:27:28.654
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-07 23:27:28.654
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VagxmJfO => OK
